@@ -14,7 +14,7 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🌇 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://jsstevenson.github.io # the base hostname & protocol for your site
 baseurl: ""
@@ -71,8 +71,8 @@ linkedin_username: james-stevenson-00999482
 scholar_userid: jRNVHpoAAAAJ
 orcid_id: 0000-0002-2568-6163
 
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+# contact_note: >
+#   You can even add a little note about which of these is the best way to reach you.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
