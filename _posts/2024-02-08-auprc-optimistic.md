@@ -1,6 +1,6 @@
 ---
 layout: post
-title: bioRxiv: "\"Commonly used software tools produce conflicting and overly-optimistic AUPRC values\""
+title: "bioRxiv: \"Commonly used software tools produce conflicting and overly-optimistic AUPRC values\""
 categories: ["python", "data science", "bioinformatics"]
 ---
 Chen et al, fresh from the bioRxiv, [write](https://www.biorxiv.org/content/10.1101/2024.02.02.578654v1):
