@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "\"Commonly used software tools produce conflicting and overly-optimistic AUPRC values\" (2024)"
-tags: ["python", "data science", "bioinformatics"]
+title: bioRxiv: "\"Commonly used software tools produce conflicting and overly-optimistic AUPRC values\""
+categories: ["python", "data science", "bioinformatics"]
 ---
 Chen et al, fresh from the bioRxiv, [write](https://www.biorxiv.org/content/10.1101/2024.02.02.578654v1):
 
@@ -9,6 +9,6 @@ Chen et al, fresh from the bioRxiv, [write](https://www.biorxiv.org/content/10.1
 
 There are, apparently, a handful of different ways to compute the "curves" for PRC and AUROC, which makes sense (given that they're all built from discrete values), and apparently (per this paper) some consensus that certain methods are more "optimistic" than they should be. It goes on to detail inconsistencies in method usage (and visualization) between core statistical libraries, including `scikit-learn`, with pretty striking results:
 
-![Figure 2c: AUPRC values for different prediction sets, as calculated from different statistical libraries](/assets/img/auprc_figure.png)
+{% include figure.liquid path="assets/img/auprc_figure.png" class="img-fluid z-depth-1" %}
 
 In some cases, these are pretty startling differences. They do note that, in the case of `scikit-learn`, the documentation at least notes the particulars of the method used, but personally, it wasn't something I'd ever thought to pay attention to before.

@@ -8,7 +8,7 @@ Syntax highlighting in IPython is a simple feature, but it's a great one. The gr
 
 However, if you use any kind of a custom terminal theme, this experience gets bumpier. IPython will generally lean on the basic ANSI colors set by your terminal, but (at least in my case -- running zshell within Alacritty/Tmux) also summons a few colors that are definitely *not* in the specified color set, and can be pretty hard to read (bad) and ugly (obviously way worse).
 
-![Default colors](/assets/img/ipython_default.png)
+{% include figure.liquid path="assets/img/ipython_default.png" class="img-fluid z-depth-1" %}
 
 Some of these are coming from my terminal -- the light-green in the prompt, and the red traceback boundaries are correct. However, the dark green/bold, and especially the bolded blue in the traceback, are bypassing my terminal config, defined directly from IPython. And the blue, in particular, is basically unreadable against my shell background.
 
@@ -63,11 +63,11 @@ Token                 | What's included
 
 This enables some progress:
 
-![Progress](/assets/img/ipython_progress.png)
+{% include figure.liquid path="assets/img/ipython_progress.png" class="img-fluid z-depth-1" %}
 
 But tracebacks are still a catastrophe:
 
-![Lack of progress](/assets/img/ipython_error_fail.png)
+{% include figure.liquid path="assets/img/ipython_error_fail.png" class="img-fluid z-depth-1" %}
 
 You can use the `InteractiveShell` setting mentioned above to turn off these colors entirely (`nocolor`) or make them insane (`LightBG`). But, even though [Pygmentize does provide a lexer for tracebacks](https://github.com/pygments/pygments/blob/c155bc4e52e313a51a03f9dcafa64b92701a6829/pygments/lexers/python.py#L714), you can't use any kind of custom colors there. So, you're stuck.
 
@@ -86,6 +86,6 @@ c.TerminalInteractiveShell.prompts_class = MyPrompt
 
 Powerline glyphs like the above will work, but colorization using ANSI escape codes will... unfortunately not, which is unsurprising.
 
-![prompt fail](/assets/img/ipython_prompt.png)
+{% include figure.liquid path="assets/img/ipython_prompt.png" class="img-fluid z-depth-1" %}
 
 You are at the whims of the Pygments tokens that you provide, and it's not clear to me whether there's any hope of overriding the token colors outside of the parent `InteractiveShell.colors` specification. Anyway, here's to hoping that someone jumps on this stuff in a future IPython PR.
