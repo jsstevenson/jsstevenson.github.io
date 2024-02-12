@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The scikit-learn AUPRC implementation is wrong (or at least overly optimistic), apparently"
-categories: ["python", "data science", "bioinformatics"]
+categories: ["python", "data science", "bioinformatics", "interesting papers"]
 ---
 Chen et al, fresh from the bioRxiv, [write](https://www.biorxiv.org/content/10.1101/2024.02.02.578654v1):
 

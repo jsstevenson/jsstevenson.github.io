@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Customizing the IPython interface"
-categories: ["hci", "repl", "python"]
+categories: ["hci", "repl", "python", "dev tools"]
 ---
 
 Syntax highlighting in IPython is a simple feature, but it's a great one. The green-red back-and-forth between input and response makes scrolling back through a terminal session smooth and readable, and coloring individual tokens by semantic meaning is both informative and easy on the eyes, obviously (that's why we do it in IDEs).
