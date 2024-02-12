@@ -21,4 +21,4 @@ I'm a software engineer based in Columbus, Ohio.
 
 I work as a bioinformatics software developer with the [Wagner Lab](https://www.nationwidechildrens.org/specialties/institute-for-genomic-medicine/research-labs/wagner-lab) at Nationwide Children's Hospital's Institute for Genomic Medicine. I'm also pursuing a Master's degree in computer science with a specialization in machine learning at [Georgia Tech](http://omscs.gatech.edu/).
 
-In my free time, I like [watching movies](https://letterboxd.com/jsstevenson/) and crafting [tools for software development](https://github.com/jsstevenson/nvim-tmux).
+In my free time, I like [watching movies](https://letterboxd.com/jsstevenson/), looking at maps, and crafting [tools for software development](https://github.com/jsstevenson/nvim-tmux).
