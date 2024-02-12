@@ -1,0 +1,117 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Important note:
+% This template requires the cv.cls file to be in the same directory as the
+% .tex file. The cv.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{cv} % Use the custom cv.cls style
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=cyan,
+    pdftitle={CV},
+    pdfpagemode=FullScreen,
+}
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{enumitem}
+\setlist{nosep} % or \setlist{noitemsep} to leave space around whole list
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+}
+\usepackage{enumitem}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+%--------------------------------------------------------------------------------------
+\name{James S. Stevenson}
+\address{Columbus, OH, USA}
+\address{james.sharpsteen@gmail.com}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Employment}
+{\bf Bioinformatics Software Developer} \hfill {\em Sep. 2020 - present}\\
+Institute for Genomic Medicine, Nationwide Children's Hospital
+\begin{itemize}[leftmargin=*]
+    \item Lead development of biomedical concept normalizer projects, including \href{https://github.com/cancervariants/therapy-normalization}{Thera-Py} and \href{https://github.com/cancervariants/disease-normalization}{Disease Normalizer}. Tailor rapid data ingest methods over millions of records from a variety of biomedical data formats into DynamoDB, PostgreSQL, and Neo4j backends.
+    \item Contribute full-stack development to \href{https://dgidb.org}{Drug-Gene Interaction Database} and \href{http://fusion-builder.cancervariants.org/}{Fusion Builder} projects, from data architecture planning to UX/UI evaluation.
+    \item Maintain community-driven genomics software within the \href{https://biocommons.org/en/latest/}{Biocommons} stack.
+\end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+%--copy and paste this region  if you need more--
+{\bf Georgia Institute of Technology} \hfill {\em expected May 2024}\\
+Master of Science in Computer Science (specialization: Machine Learning)
+\begin{itemize}[leftmargin=*]
+    \item \small{\textbf{Relevant courses}: Machine Learning, Deep Learning, Graduate Algorithms, Big Data for Healthcare, AI Ethics \& Society, Human-Computer Interaction}
+\end{itemize}
+
+{\bf University of Puget Sound} \hfill {\em May 2013}\\
+Bachelor of Arts in Philosophy; Politics \& Government
+\end{rSection}
+
+%--------------------------------------------------------------------------------
+%    Publications
+%-----------------------------------------------------------------------------------------------
+
+\begin{rSection}{Publications}
+{Matthew Cannon, \textbf{James Stevenson}, Kathryn Stahl, Rohit Basu, Adam Coffman, Susanna Kiwala, Joshua F McMichael, Kori Kuzma, Dorian Morrissey, Kelsy Cotto, Elaine R Mardis, Obi L Griffith, Malachi Griffith, Alex H Wagner. ``DGIdb 5.0: rebuilding the drug–gene interaction database for precision medicine and drug discovery platforms.'' Nucleic Acids Research, Volume 52, Issue D1, 5 January 2024}\\
+\\
+{Matthew Cannon, \textbf{James Stevenson}, Kori Kuzma, Susanna Kiwala, Jeremy L Warner, Obi L Griffith, Malachi Griffith, Alex H Wagner. ``Normalization of Drug and Therapeutic Concepts with Thera-Py.'' JAMIA Open, vol. 7, no. 4 (2023).}
+\end{rSection}
+
+%--------------------------------------------------------------------------------
+%    Conference Presentations
+%-----------------------------------------------------------------------------------------------
+
+\begin{rSection}{Conference Presentations}
+\textbf{ Cancer Genomics Consortium Annual Meeting}{, St. Louis, MO} \hfill {\em August 2023}\\
+{\em ``Overcoming challenges in semantic alignment of therapeutics knowledge using TheraPy''}\\
+{Technologist Abstract Travel Award}\\
+\\
+\textbf{ CASCAID Regional Conference}{, Bellingham, WA} \hfill {\em August 2012}\\
+{\em ``You Eat What You Are: Deconstruction, Dialectics, and Digestion''}\\
+{Best Student Paper Award}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TEACHING SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Teaching}
+{\bf Instructional Aide} \hfill {\em Jan. 2021 - Aug. 2021}\\
+Georgia Institute of Technology\\
+CS 6750: Human-Computer Interaction\\
+% \\
+% {\bf Instructor} \hfill {\em Sep. 2013 - May 2015}\\
+% University of Puget Sound\\
+% COMM 292: Intercollegiate Debate\\
+% \\
+% {\bf Debate Instructor} \hfill {\em July 2009 - July 2013}\\
+% Dixie State University\\
+% Sun Country Forensics Institute\\
+\end{rSection}
+
+\end{document}----------------------------
+
