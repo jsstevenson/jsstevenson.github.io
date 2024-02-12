@@ -17,7 +17,7 @@ selected_papers: false
 social: true # includes social icons at the bottom of the page
 ---
 
-I'm a software engineer based in Columbus, Ohio.
+I'm a software engineer based in Columbus, Ohio. My CV is available [here](/assets/pdf/cv_resume/cv.pdf).
 
 I work as a bioinformatics software developer with the [Wagner Lab](https://www.nationwidechildrens.org/specialties/institute-for-genomic-medicine/research-labs/wagner-lab) at Nationwide Children's Hospital's Institute for Genomic Medicine. I'm also pursuing a Master's degree in computer science with a specialization in machine learning at [Georgia Tech](http://omscs.gatech.edu/).
 

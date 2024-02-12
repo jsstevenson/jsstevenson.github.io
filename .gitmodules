@@ -1,0 +1,3 @@
+[submodule "assets/pdf/cv_resume"]
+	path = assets/pdf/cv_resume
+	url = https://github.com/jsstevenson/cv_resume
