@@ -3,6 +3,7 @@ layout: post
 title: "Exploring the GSC 2024 Phenotyping Benchmark"
 categories: ["data science", "nlp", "bioinformatics"]
 ---
+
 A [recent paper](https://pubmed.ncbi.nlm.nih.gov/38913850/) on a novel computational phenotyping method from Peter Robinson's group includes a 2024 update to their `GSC+` dataset, adding annotations from recent HPO updates to the original set of PubMed abstracts.
 
 {% include figure.liquid path="assets/img/gsc_paper_figure.jpeg" class="img-fluid img-small-width" %}
@@ -11,23 +12,23 @@ They helpfully include a figure describing the anatomical/system coverage of the
 
 Using the [eutils](https://github.com/biocommons/eutils) package, I downloaded metadata for each abstract and dug in a bit. Unsurprising given the content emphasis, many of the abstracts come from a small set of genetics journals:
 
-| Journal name | # of abstracts |
-| :----------- | -------------: |
-| Am J Med Genet | 57 |
-| J Med Genet | 23 |
-| Am J Hum Genet | 21 |
-| Am J Med Genet A | 11 |
-| Clin Genet | 10 |
-| Neurology | 7 |
-| Hum Mol Genet | 7 |
-| Hum Genet | 7 |
-| Eur J Hum Genet | 6 |
-| Genomics | 5 |
-| Nature | 4 |
-| Nat Genet | 4 |
-| Lancet | 3 |
-| Arch Dis Child | 3 |
-| J Hum Genet | 3 |
+| Journal name     | # of abstracts |
+| :--------------- | -------------: |
+| Am J Med Genet   |             57 |
+| J Med Genet      |             23 |
+| Am J Hum Genet   |             21 |
+| Am J Med Genet A |             11 |
+| Clin Genet       |             10 |
+| Neurology        |              7 |
+| Hum Mol Genet    |              7 |
+| Hum Genet        |              7 |
+| Eur J Hum Genet  |              6 |
+| Genomics         |              5 |
+| Nature           |              4 |
+| Nat Genet        |              4 |
+| Lancet           |              3 |
+| Arch Dis Child   |              3 |
+| J Hum Genet      |              3 |
 
 The abstracts go surprisingly far back. In discussing this, one of our scientists noted that a 1976 abstract uses the term "ankylois" that appears to be erroneous or anachronistic, and is a common failure point for most phenotyping tools. Because the abstract set was assembled several years ago, there's nothing newer than 2008.
 

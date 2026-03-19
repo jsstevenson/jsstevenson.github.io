@@ -2,6 +2,7 @@
 layout: page
 title: "TheraPy @ CGC 2023"
 ---
+
 <p>Related material for "Overcoming challenges in semantic alignment of therapeutics knowledge using TheraPy":</p>
 <ul>
   <li>

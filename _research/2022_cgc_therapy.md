@@ -2,6 +2,7 @@
 layout: page
 title: "TheraPy @ CGC 2022"
 ---
+
 <div>
   <div class="card-body">
     <p>Related material for "Normalizing Therapy Concepts With TheraPy":</p>

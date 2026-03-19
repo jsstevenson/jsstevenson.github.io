@@ -6,7 +6,7 @@ categories: ["hci", "repl", "python", "dev tools"]
 
 Syntax highlighting in IPython is a simple feature, but it's a great one. The green-red back-and-forth between input and response makes scrolling back through a terminal session smooth and readable, and coloring individual tokens by semantic meaning is both informative and easy on the eyes, obviously (that's why we do it in IDEs).
 
-However, if you use any kind of a custom terminal theme, this experience gets bumpier. IPython will generally lean on the basic ANSI colors set by your terminal, but (at least in my case -- running zshell within Alacritty/Tmux) also summons a few colors that are definitely *not* in the specified color set, and can be pretty hard to read (bad) and ugly (obviously way worse).
+However, if you use any kind of a custom terminal theme, this experience gets bumpier. IPython will generally lean on the basic ANSI colors set by your terminal, but (at least in my case -- running zshell within Alacritty/Tmux) also summons a few colors that are definitely _not_ in the specified color set, and can be pretty hard to read (bad) and ugly (obviously way worse).
 
 {% include figure.liquid path="assets/img/ipython_default.png" class="img-fluid z-depth-1" %}
 
@@ -32,34 +32,34 @@ There are a few out-of-the-box changes that can help, sort of. The [IPython conf
 
 Now, the Pygments stuff is pretty great. It's a regex-based highlighter, which means anyone used to tools like [Treesitter](https://tree-sitter.github.io/tree-sitter/syntax-highlighting) will be a little disappointed, but it still affords a decent amount of granularity for color choices, and lets you define general token classes (like Number) and then provide different selections for subcomponents (like Number.Float). I couldn't find a master list of token types used in the Python lexer, though, so I had to reconstruct an approximation from the [source code](https://github.com/pygments/pygments/blob/c155bc4e52e313a51a03f9dcafa64b92701a6829/pygments/lexers/python.py#L28):
 
-Token                 | What's included
----                   | ---
-`Text`                | Catch-all for anything not otherwise defined
-`String`              | Includes multiline comments, too
-`String.Escape`       | Escape sequences within strings
-`String.Interpol`     | The brackets in f-strings
-`Number`              | All numbers
-`Number.Integer`      | Ints
-`Number.Float`        | Floats
-`Number.Bin`          | Binary numbers
-`Number.Oct`          | Octals
-`Number.Hex`          | Hex values
-`Comment`             | Single-line comments
-`Keyword`             | Lots of members -- stuff like `def`, `class`, `True` and `False`, `if`/`elif`/`else` etc.
-`Keyword.Constant`    | `True`, `False`, and `None`
-`Keyword.Reserved`    | A few core tokens like `except`, `finally`, `if`, `raise`, `while`, etc
-`Keyword.Namespace`   | `import`, and `from`/`import`
-`Operator`            | Everything you'd expect, and also the Walrus
-`Operator.Word`       | `in`, `is`, `and`, `or`, `not`
-`Punctuation`         | Brackets and parens
-`Name.Builtin`        | Builtin functions like `all()`, `max()`, `iter()`
-`Name.Builtin.Pseudo` | Stuff like `self`, `Ellipsis`, `NotImplemented`, `cls`
-`Name.Exception`      | All of the builtin Exception types
-`Name.Function`       | the name of the function in the definition
-`Name.Function.Magic` | Builtin dunder methods
-`Name.Variable.Magic` | Builtin dunder object attributes
-`Name.Decorator`      | Both the `@` and the decorator name
-`Name.Class`          | I think this should be the name in the class definition but couldn't confirm experimentally
+| Token                 | What's included                                                                             |
+| --------------------- | ------------------------------------------------------------------------------------------- |
+| `Text`                | Catch-all for anything not otherwise defined                                                |
+| `String`              | Includes multiline comments, too                                                            |
+| `String.Escape`       | Escape sequences within strings                                                             |
+| `String.Interpol`     | The brackets in f-strings                                                                   |
+| `Number`              | All numbers                                                                                 |
+| `Number.Integer`      | Ints                                                                                        |
+| `Number.Float`        | Floats                                                                                      |
+| `Number.Bin`          | Binary numbers                                                                              |
+| `Number.Oct`          | Octals                                                                                      |
+| `Number.Hex`          | Hex values                                                                                  |
+| `Comment`             | Single-line comments                                                                        |
+| `Keyword`             | Lots of members -- stuff like `def`, `class`, `True` and `False`, `if`/`elif`/`else` etc.   |
+| `Keyword.Constant`    | `True`, `False`, and `None`                                                                 |
+| `Keyword.Reserved`    | A few core tokens like `except`, `finally`, `if`, `raise`, `while`, etc                     |
+| `Keyword.Namespace`   | `import`, and `from`/`import`                                                               |
+| `Operator`            | Everything you'd expect, and also the Walrus                                                |
+| `Operator.Word`       | `in`, `is`, `and`, `or`, `not`                                                              |
+| `Punctuation`         | Brackets and parens                                                                         |
+| `Name.Builtin`        | Builtin functions like `all()`, `max()`, `iter()`                                           |
+| `Name.Builtin.Pseudo` | Stuff like `self`, `Ellipsis`, `NotImplemented`, `cls`                                      |
+| `Name.Exception`      | All of the builtin Exception types                                                          |
+| `Name.Function`       | the name of the function in the definition                                                  |
+| `Name.Function.Magic` | Builtin dunder methods                                                                      |
+| `Name.Variable.Magic` | Builtin dunder object attributes                                                            |
+| `Name.Decorator`      | Both the `@` and the decorator name                                                         |
+| `Name.Class`          | I think this should be the name in the class definition but couldn't confirm experimentally |
 
 This enables some progress:
 

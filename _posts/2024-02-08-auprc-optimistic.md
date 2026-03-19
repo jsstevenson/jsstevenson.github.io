@@ -3,6 +3,7 @@ layout: post
 title: "The scikit-learn AUPRC implementation is wrong (or at least overly optimistic), apparently"
 categories: ["python", "data science", "bioinformatics", "interesting papers"]
 ---
+
 Chen et al, fresh from the bioRxiv, [write](https://www.biorxiv.org/content/10.1101/2024.02.02.578654v1):
 
 > The precision-recall curve (PRC) and the area under it (AUPRC) are useful for quantifying classification performance. They are commonly used in situations with imbalanced classes, such as cancer diagnosis and cell type annotation. We evaluated 10 popular tools for plotting PRC and computing AUPRC, which were collectively used in >3,000 published studies. We found the AUPRC values computed by the tools rank classifiers differently and some tools produce overly-optimistic results.

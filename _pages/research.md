@@ -6,8 +6,8 @@ description: ""
 nav: true
 nav_order: 3
 horizontal: false
-
 ---
+
 <p><span style="font-weight: bold;">Therapy concept normalization.</span> Explored referential ambiguity for drug and therapy terms in biomedical databases and literature. Performed in support of the <a href="https://cancervariants.org/projects/integration/">Knowledgebase Integration project</a> of the Variant Interpretation for Cancer Consortium (VICC).</p>
 
 <ul style="list-style-type: none; padding-left: 10px; ">
